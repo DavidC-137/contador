@@ -14,7 +14,13 @@ class _LoginPageState extends State<LoginPage> {
       body: Stack(  
         children: const <Widget> [
           Fondo(),
-          Contenido()
+          Expanded(
+            child: Center(
+              child: SingleChildScrollView(
+                child: Contenido()
+                )
+              )
+            )
         ],
       ),
     );
